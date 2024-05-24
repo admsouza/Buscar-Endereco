@@ -2,6 +2,7 @@
     margin: 500;
     padding: 100;
     box-sizing: border-box;
+    margin-top: 2%;
 }
 
 
@@ -19,7 +20,7 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 input {
@@ -43,4 +44,3 @@ input[type="submit"]:hover {
 input[type="submit"]:focus {
     outline: none;
 }
-

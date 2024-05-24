@@ -16,65 +16,71 @@
 
 <body>
     <div class="container">
-        <div class="box">
-            <form action="">
-                <fieldset>
-                    <legend><b>Pesquisar pelo CEP</b></legend>
-                    <br>
-
-                    <div class="inputBox">
-                        <label></label>
-                        <input id="cep" onblur="buscarCEP()" placeholder="Informe o CEP">
-                    </div>
-                    <div class="inputBox">
-                        <label>Rua</label>
-                        <input id="rua" placeholder=""disabled>
-                    </div>
-                    <div class="inputBox">
-                        <label>Bairro</label>
-                        <input id="bairro" placeholder=""disabled>
-                    </div>
-                    <div class="inputBox">
-                        <label>Cidade</label>
-                        <input id="cidade" placeholder=""disabled>
-                    </div>
-                    <div class="inputBox">
-                        <label>Estado</label>
-                        <input id="estado" placeholder=""disabled>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend><b>Buscar pelo CNPJ</b></legend>
-                    <div class="inputBox">
-                        <label></label>
-                        <input id="cnpj" onblur="searchCNPJ()" placeholder="Informe o CNPJ">
-                    </div>
-                    <div class="inputBox">
-                        <label>Razão Social</label>
-                        <input id="nome" placeholder="" disabled>
-                    </div>
-                    <div class="inputBox">
-                        <label>Logradouro</label>
-                        <input id="road" placeholder="" disabled>
-                    </div>
-                    <div class="inputBox">
-                        <label>Número</label>
-                        <input id="numero" placeholder="" disabled>
-                    </div>
-                    <div class="inputBox">
-                        <label>Bairro</label>
-                        <input id="bairro2" placeholder="" disabled>
-                    </div>
-                    <div class="inputBox">
-                        <label>Cidade</label>
-                        <input id="municipio" placeholder="" disabled>
-                    </div>
-                    <div class="inputBox">
-                        <label>Estado</label>
-                        <input id="uf" placeholder="" disabled>
-                    </div>
-                </fieldset>
-            </form>
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <form action="">
+                    <fieldset>
+                        <legend><b>Pesquisar pelo CEP</b></legend>
+                        <br>
+                        <div class="inputBox">
+                            <label></label>
+                            <input id="cep" onblur="buscarCEP()" placeholder="Informe o CEP" class="form-control">
+                        </div>
+                        <div class="inputBox">
+                            <label>Rua</label>
+                            <input id="rua" placeholder="" disabled class="form-control">
+                        </div>
+                        <div class="inputBox">
+                            <label>Bairro</label>
+                            <input id="bairro" placeholder="" disabled class="form-control">
+                        </div>
+                        <div class="inputBox">
+                            <label>Cidade</label>
+                            <input id="cidade" placeholder="" disabled class="form-control">
+                        </div>
+                        <div class="inputBox">
+                            <label>Estado</label>
+                            <input id="estado" placeholder="" disabled class="form-control">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <form action="">
+                    <fieldset>
+                        <legend><b>Buscar pelo CNPJ</b></legend>
+                        <br>
+                        <div class="inputBox">
+                            <label></label>
+                            <input id="cnpj" onblur="searchCNPJ()" placeholder="Informe o CNPJ" class="form-control">
+                        </div>
+                        <div class="inputBox">
+                            <label>Razão Social</label>
+                            <input id="nome" placeholder="" disabled class="form-control">
+                        </div>
+                        <div class="inputBox">
+                            <label>Logradouro</label>
+                            <input id="road" placeholder="" disabled class="form-control">
+                        </div>
+                        <div class="inputBox">
+                            <label>Número</label>
+                            <input id="numero" placeholder="" disabled class="form-control">
+                        </div>
+                        <div class="inputBox">
+                            <label>Bairro</label>
+                            <input id="bairro2" placeholder="" disabled class="form-control">
+                        </div>
+                        <div class="inputBox">
+                            <label>Cidade</label>
+                            <input id="municipio" placeholder="" disabled class="form-control">
+                        </div>
+                        <div class="inputBox">
+                            <label>Estado</label>
+                            <input id="uf" placeholder="" disabled class="form-control">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </div>
 </body>
