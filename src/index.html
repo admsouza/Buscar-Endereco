@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Endereço</title>
+    <link rel="stylesheet" href="estiloendereco.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <form action="">
+                <fieldset>
+                    <legend><b>Pesquisar pelo CEP</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <label>CEP</label>
+                        <input id="cep" onblur="buscarCEP()" placeholder="Número do CEP?">
+                    </div>
+                    <div class="inputBox">
+                        <label>Rua</label>
+                        <input id="rua" placeholder="Nome da rua?">
+                    </div>
+                    <div class="inputBox">
+                        <label>Bairro</label>
+                        <input id="bairro" placeholder="Nome do bairro?">
+                    </div>
+                    <div class="inputBox">
+                        <label>Cidade</label>
+                        <input id="cidade" placeholder="Nome da cidade?">
+                    </div>
+                    <div class="inputBox">
+                        <label>Estado</label>
+                        <input id="estado" placeholder="Nome do estado?">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Buscar pelo CNPJ</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <label>CNPJ</label>
+                        <input id="cnpj" onblur="searchCNPJ()" placeholder="Digite o número">
+                    </div>
+                    <div class="inputBox">
+                        <label>Razão Social</label>
+                        <input id="nome" placeholder="Nome">
+                    </div>
+                    <div class="inputBox">
+                        <label>Logradouro</label>
+                        <input id="road" placeholder="Rua">
+                    </div>
+                    <div class="inputBox">
+                        <label>Número</label>
+                        <input id="numero" placeholder="Número">
+                    </div>
+                    <div class="inputBox">
+                        <label>Bairro</label>
+                        <input id="bairro2" placeholder="Bairro">
+                    </div>
+                    <div class="inputBox">
+                        <label>Cidade</label>
+                        <input id="municipio" placeholder="Município">
+                    </div>
+                    <div class="inputBox">
+                        <label>Estado</label>
+                        <input id="uf" placeholder="UF">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
