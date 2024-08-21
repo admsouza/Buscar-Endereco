@@ -7,10 +7,10 @@ function buscarCEP() {
             return dadoscep.json(); /* transformar o endereço em JSON */
         })
         .then(function(enderecocep) {
-            document.getElementById("rua").value = enderecocep.street || "Não disponível";
-            document.getElementById("bairro").value = enderecocep.neighborhood || "Não disponível";
-            document.getElementById("cidade").value = enderecocep.city || "Não disponível";
-            document.getElementById("estado").value = enderecocep.state || "Não disponível";
+            document.getElementById("rua").value = enderecocep.street || "Não Cadastrado";
+            document.getElementById("bairro").value = enderecocep.neighborhood || "Não Cadastrado";
+            document.getElementById("cidade").value = enderecocep.city || "Não Cadastrado";
+            document.getElementById("estado").value = enderecocep.state || "Não Cadastrado";
         })
         .catch(function(error) {
             console.error('Erro na consulta:', error);
