@@ -31,6 +31,7 @@ function searchCNPJ() {
             document.getElementById("nome").value = enderecocnpj.razao_social;
             document.getElementById("road").value = enderecocnpj.logradouro;
             document.getElementById("numero").value = enderecocnpj.numero;
+                document.getElementById("cep").value = enderecocnpj.cep;
             document.getElementById("bairro2").value = enderecocnpj.bairro;
             document.getElementById("municipio").value = enderecocnpj.municipio;
             document.getElementById("uf").value = enderecocnpj.uf;
