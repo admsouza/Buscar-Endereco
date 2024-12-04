@@ -2,12 +2,6 @@ function buscarCEP() {
     let cep = document.getElementById("cep").value;
     // Remove caracteres não numéricos (máscara)
     cep = cep.replace(/\D/g, ""); 
-
-    if (cep.length !== 8) {
-        alert("CEP inválido. Insira um CEP com 8 dígitos.");
-        return;
-    }
-
     let url = "https://brasilapi.com.br/api/cep/v1/" + cep;
 
     fetch(url)
@@ -34,12 +28,6 @@ function searchCNPJ() {
     let cnpj = document.getElementById("cnpj").value;
     // Remove caracteres não numéricos (máscara)
     cnpj = cnpj.replace(/\D/g, ""); 
-
-    if (cnpj.length !== 14) {
-        alert("CNPJ inválido. Insira um CNPJ com 14 dígitos.");
-        return;
-    }
-
     let link = "https://brasilapi.com.br/api/cnpj/v1/" + cnpj;
 
     fetch(link)
