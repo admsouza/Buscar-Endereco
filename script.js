@@ -2,6 +2,7 @@ function buscarCEP() {
     let cep = document.getElementById("cep").value;
     // Remove caracteres não numéricos (máscara)
     cep = cep.replace(/\D/g, ""); 
+
     let url = "https://brasilapi.com.br/api/cep/v1/" + cep;
 
     fetch(url)
@@ -16,7 +17,6 @@ function buscarCEP() {
         })
         .catch(function(error) {
             console.error('Erro na consulta:', error);
-            alert("CEP inválido ou não encontrado.");
             document.getElementById("rua").value = "";
             document.getElementById("bairro").value = "";
             document.getElementById("cidade").value = "";
@@ -28,6 +28,7 @@ function searchCNPJ() {
     let cnpj = document.getElementById("cnpj").value;
     // Remove caracteres não numéricos (máscara)
     cnpj = cnpj.replace(/\D/g, ""); 
+
     let link = "https://brasilapi.com.br/api/cnpj/v1/" + cnpj;
 
     fetch(link)
@@ -47,7 +48,6 @@ function searchCNPJ() {
         })
         .catch(function (error) {
             console.error('Erro na consulta:', error);
-            alert("CNPJ inválido ou não encontrado.");
             document.getElementById("nome").value = "";
             document.getElementById("road").value = "";
             document.getElementById("numero").value = "";
